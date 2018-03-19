@@ -1,3 +1,4 @@
+<strong>Pronto</strong>
 
 Exercício -  Fábrica Abstrata  - Modelo de classe telefonia. 
 
