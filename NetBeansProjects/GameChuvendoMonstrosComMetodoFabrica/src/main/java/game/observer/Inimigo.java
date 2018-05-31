@@ -1,12 +1,14 @@
 
 package game.observer;
 
+import com.sun.org.glassfish.gmbal.ManagedObject;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * @author felipe
  */
-    public class Inimigo extends PersonagemPadrao implements Observador{
+    public class Inimigo extends PersonagemPadrao implements Observador, Cloneable{
         
     
     public Inimigo(String pathImage, int posX, int posY) {
@@ -25,5 +27,15 @@ import java.util.concurrent.ThreadLocalRandom;
         else{
             this.posY = this.posY + 5;            
         }                        
+    }
+
+    public Object clone(){
+        Object obj = null;
+        try{
+            obj = super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return obj;
     }
 }

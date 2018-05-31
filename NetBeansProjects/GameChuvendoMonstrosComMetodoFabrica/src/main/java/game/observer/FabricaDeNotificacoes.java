@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.newdawn.slick.Image;
-import org.newdawn.slick.SlickException;
 
 public class FabricaDeNotificacoes {
     String filePath;
@@ -18,14 +17,10 @@ public class FabricaDeNotificacoes {
         }
     }
 
-    public Image criarImagensNotificacao(String tipo) {
-        Image imagem = null; 
-        try {
-            imagem = new Image(tipo);
-        } catch (SlickException ex) {
-            Logger.getLogger(FabricaDeNotificacoes.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return imagem;
+    public Image criarImagensNotificacao(String tipo) {        
+        //gameover
+        //ganhou   
+        return null;
     }
 
    

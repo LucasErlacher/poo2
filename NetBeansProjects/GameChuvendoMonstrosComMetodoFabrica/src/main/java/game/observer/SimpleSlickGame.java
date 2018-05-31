@@ -55,12 +55,10 @@ public class SimpleSlickGame extends BasicGame {
             inimigo3 = fabricaDeInimigos.criarInimigo(3);
             inimigoEsperto = fabricaDeInimigos.criarInimigo(4);
             
-            FabricaDeNotificacoes fabricaNotificacoes = new FabricaDeNotificacoes();
             
-            gameover = fabricaNotificacoes.criarImagensNotificacao(filePath + 
-                                            "\\src\\main\\java\\gameover.png");
-            ganhouJogo = fabricaNotificacoes.criarImagensNotificacao(filePath +
-                                            "\\src\\main\\java\\ganhou.png");
+            gameover = new Image(filePath + "\\src\\main\\java\\gameover.png");
+            ganhouJogo = new Image(filePath + "\\src\\main\\java\\ganhou.png");
+
             
             heroi.addMonitores(inimigo1);
             heroi.addMonitores(inimigo2);
